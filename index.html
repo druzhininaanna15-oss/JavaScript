@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <h1>изучаю js</h1>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <h1></h1>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="./script.js"></script>
+  </head>
+  <body>
     
-</body>
+      <header class="header">
+      <div class="container">
+        <h1 class="logo">To Do List</h1>
+        <div class="nav-links">
+        <nav class="nav">
+          <a href="index.html" class="nav__link nav__link--active">To Do</a>
+          <a href="kanban.html" class="nav__link">Kanban</a>
+          <a href="habits.html" class="nav__link">Привычки</a>
+        </nav>
+      </div>
+      </header>
+      <main>
+        <form class="task-form">
+          <input type="text" class="task-input" placeholder="новая задача" />
+          <button type="submit" class="add-button">добавить</button>
+        </form>
+       
+         <div class="task-panel">
+          <input type="text" class="search-input" placeholder="поиск задач" />
+          <button type="submit" class="task-button">все</button>
+          <button type="submit" class="task-button">Активные</button>
+          <button type="submit" class="task-button">Завершённые</button>
+           <select id="sortOrder" class="task-button">
+    <option value="old">Сначала старые</option>
+    <option value="new">Сначала новые</option>
+    </select>
+    </div>
+  
+    <section class="line">
+      <form class="line-form">
+        <input type="text" class="input-line" placeholder="новая задача" />
+      </form>
+    
+    
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

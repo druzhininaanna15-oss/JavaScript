@@ -1,19 +1,5 @@
-let name = "Аня";
-let age = 15;
-let city = "Дальнереченск";
+const line = document.querySelector('.line');
+const lineCard = document.createElement('article');
+const inputLine = document.querySelector('.input-line');
+console.log(inputLine);
 
-let userdata = `имя пользователя: ${name}, возраст: ${age}, город: ${city}`;
-console.log(userdata)
-
-
-let a = 10;
-let b = 5;
-
-let resuls = `Результаты операций:
-a = ${a}, b = ${b}
-a + b = ${a + b}
-a - b = ${a - b}
-a * b = ${a * b}
-a / b = ${a / b}`;
-
-console.log(resuls)
